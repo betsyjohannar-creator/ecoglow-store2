@@ -1,10 +1,35 @@
 // Datos de ejemplo: productos
 const products = [
-  { id: 1, name: "Jabón artesanal de lavanda", price: 8.50, desc: "Relajante, ideal para piel sensible.", img: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop" },
-  { id: 2, name: "Aceite corporal cítrico", price: 12.00, desc: "Hidratación diaria con aroma fresco.", img: "https://images.unsplash.com/photo-1524594154906-9b6c98f6f2b6?q=80&w=800&auto=format&fit=crop" },
-  { id: 3, name: "Crema facial nutritiva", price: 18.00, desc: "Para piel radiante y equilibrada.", img: "https://images.unsplash.com/photo-1556228720-4e1a1b3f3f9a?q=80&w=800&auto=format&fit=crop" },
-  { id: 4, name: "Exfoliante de café", price: 9.00, desc: "Revitaliza y suaviza la piel.", img: "https://images.unsplash.com/photo-1542444459-db13c0c1df2d?q=80&w=800&auto=format&fit=crop" }
+  { 
+    id: 1, 
+    name: "Jabón artesanal de lavanda", 
+    price: 8.50, 
+    desc: "Relajante, ideal para piel sensible.", 
+    img: "https://images.unsplash.com/photo-1600185365483-26d7baed865c?q=80&w=800&auto=format&fit=crop" 
+  },
+  { 
+    id: 2, 
+    name: "Aceite corporal cítrico", 
+    price: 12.00, 
+    desc: "Hidratación diaria con aroma fresco.", 
+    img: "https://images.unsplash.com/photo-1556228578-3f42c89033b8?q=80&w=800&auto=format&fit=crop" 
+  },
+  { 
+    id: 3, 
+    name: "Crema facial nutritiva", 
+    price: 18.00, 
+    desc: "Para piel radiante y equilibrada.", 
+    img: "https://images.unsplash.com/photo-1522337360788-8b41fbfbf88c?q=80&w=800&auto=format&fit=crop" 
+  },
+  { 
+    id: 4, 
+    name: "Exfoliante de café", 
+    price: 9.00, 
+    desc: "Revitaliza y suaviza la piel.", 
+    img: "https://images.unsplash.com/photo-1598511724470-253d257d31a3?q=80&w=800&auto=format&fit=crop" 
+  }
 ];
+
 
 let cart = [];
 
