@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EcoGlow Store — Productos Naturales</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Icon (simple) -->
+  <link rel="icon" href="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=64&auto=format&fit=crop&crop=faces">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img class="logo" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=60&auto=format&fit=crop&crop=faces" alt="logo">
+        <div>
+          <h1>EcoGlow</h1>
+          <small>Productos naturales · Hecho con amor</small>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#productos">Productos</a>
+        <a href="#about">Acerca</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="searchBtn" class="icon-btn" title="Buscar">🔍</button>
+        <button id="cartBtn" class="cart-btn" title="Ver carrito">
+          🧺 <span id="cartCount" class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h2>Cuida tu piel y el planeta</h2>
+        <p>Productos naturales y sostenibles para tu bienestar diario. Ingredientes puros, empaques responsables.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#productos">Comprar ahora</a>
+          <a class="btn ghost" href="#about">Conócenos</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1556228720-4e1a1b3f3f9a?q=80&w=800&auto=format&fit=crop" alt="Productos naturales" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN PRODUCTOS -->
+  <section id="productos" class="container section">
+    <h3 class="section-title">Productos destacados</h3>
+    <div id="productGrid" class="product-grid">
+      <!-- Las tarjetas se inyectan con JS -->
+    </div>
+  </section>
+
+  <!-- ACERCA -->
+  <section id="about" class="container section about">
+    <div class="about-card">
+      <h3>Nuestra historia</h3>
+      <p>EcoGlow nace de la pasión por los ingredientes naturales y el cuidado del medio ambiente. Elaboramos cosmética artesanal pensando en tu bienestar y el futuro del planeta.</p>
+      <ul>
+        <li>Ingredientes 100% naturales</li>
+        <li>Embalaje reciclable</li>
+        <li>Producción local y ética</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>EcoGlow</h4>
+        <p>Productos naturales · Bogotá · Colombia</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>hola@ecoglow.store</p>
+        <p>+57 300 000 0000</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <p>Instagram · Facebook</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> EcoGlow Store — Hecho con cariño
+    </div>
+  </footer>
+
+  <!-- Modal carrito simple -->
+  <div id="cartModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" id="closeCart">✕</button>
+      <h4>Tu carrito</h4>
+      <div id="cartItems"></div>
+      <div class="cart-actions">
+        <div class="total">Total: <span id="cartTotal">$0.00</span></div>
+        <button id="checkoutBtn" class="btn primary">Ir a pagar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
